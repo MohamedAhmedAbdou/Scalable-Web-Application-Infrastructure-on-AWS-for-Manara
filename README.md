@@ -1,27 +1,28 @@
 # Scalable-Web-Application-Infrastructure-on-AWS-for-Manara
 ![Architecture](manara.drawio.svg)
-Architecture: EC2-based
+
+##Architecture: EC2-based
 Deploy a simple web application on AWS using EC2 instances, ensuring high availability and scalability with Elastic Load Balancing (ALB) and Auto Scaling Groups (ASG). The project demonstrates best practices for compute scalability, security, and cost optimization.
 
 This architecture automatically handles traffic spikes by adding more servers when needed and removes them when traffic is low, helping you save money while keeping your application running smoothly.
 
-Project Overview
+##Project Overview
 This project creates a production-ready web application infrastructure on AWS that can handle thousands of users simultaneously. The system automatically adjusts to traffic changes, ensuring your application performs well during both quiet periods and traffic spikes.
 
 The architecture follows AWS best practices for security, reliability, and cost optimization. All components work together to create a fault-tolerant system that can recover from failures automatically.
 
-How It Works
-Traffic comes in through the Application Load Balancer
-Load Balancer distributes requests across healthy EC2 instances
-Auto Scaling monitors CPU usage and request counts
-New instances launch automatically when traffic increases
-Instances terminate automatically when traffic decreases
-Database stores application data with automatic backups
-Key AWS Services Used
-EC2
+##How It Works
+1.Traffic comes in through the Application Load Balancer
+2.Load Balancer distributes requests across healthy EC2 instances
+3.Auto Scaling monitors CPU usage and request counts
+4.New instances launch automatically when traffic increases
+5.Instances terminate automatically when traffic decreases
+6.Database stores application data with automatic backups
+##Key AWS Services Used
+##EC2
 Launch instances for the web app. These virtual servers run your application code and can be automatically created or removed based on demand.
 
-Application Load Balancer (ALB)
+##Application Load Balancer (ALB)
 Distributes traffic across multiple instances. Acts as a smart traffic director that only sends requests to healthy servers and can handle SSL certificates.
 
 Auto Scaling Group (ASG)
