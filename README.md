@@ -1,5 +1,5 @@
 # Scalable-Web-Application-Infrastructure-on-AWS-for-Manara
-
+![Architecture](manara.drawio.svg)
 Architecture: EC2-based
 Deploy a simple web application on AWS using EC2 instances, ensuring high availability and scalability with Elastic Load Balancing (ALB) and Auto Scaling Groups (ASG). The project demonstrates best practices for compute scalability, security, and cost optimization.
 
